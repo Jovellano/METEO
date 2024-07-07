@@ -138,7 +138,7 @@ main {
 }
 .clima-app-icono {
   font-size: 44px;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 .clima-app-temperatura {
   font-size: 88px;
@@ -147,7 +147,7 @@ main {
 }
 
 .clima-app-unidad {
-  margin-top: 30px;
+  margin-top: 24px;
   font-size: 26px;
 }
 
