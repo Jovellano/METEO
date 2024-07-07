@@ -16,11 +16,12 @@
   <body>
     <div class="APP">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Ingresa ciudad"
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
@@ -29,7 +30,7 @@
       <main>
         <div class="clima-app-data">
           <div>
-            <h1 class="clima-app-ciudad">Asunción</h1>
+            <h1 class="clima-app-ciudad" id="city">Asunción</h1>
             <p class="clima-app-detalle">
               Sábado 19:00, Nublado
               <br />
@@ -59,5 +60,8 @@
         >
       </footer>
     </div>
+    <script src="index.js">
+
+    </script>
   </body>
 </html>
