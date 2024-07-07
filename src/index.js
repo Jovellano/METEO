@@ -1,6 +1,6 @@
 function seacrhCity(city) {
-  let apiKey = "3dfbt24a697c355eb92bof5b6004aa5c";
-  let apiUrl = `"https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&unidad=metric"`;
+  let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
+  let apiUrl = `"https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric"`;
   console.log(apiUrl);
 }
 
