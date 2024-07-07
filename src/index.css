@@ -106,50 +106,49 @@ header {
   margin-left: 10px;
   border-radius: 6px;
   color: #dcd0ff;
-
-  main {
-    padding: 30px 0;
-  }
-
-.clima-app-ciudad{
-    margin: 0;
-    font-size: 40px;
-    line-height: 48px;
 }
 
-.clima-app-detalle{
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(39, 33, 66, 0.4);
-    font-weight: 500px;
-
-}
-.clima-app-detalle strong{
-    color:pink;
+main {
+  padding: 30px 0;
 }
 
+.clima-app-ciudad {
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.clima-app-detalle {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(39, 33, 66, 0.4);
+  font-weight: 500px;
+}
+.clima-app-detalle strong {
+  color: pink;
+}
 
 .clima-app-data {
   display: flex;
   justify-content: space-between;
 }
 
-.clima-app-temperatura-container{
-    display: flex;
+.clima-app-temperatura-container {
+  display: flex;
 }
-.clima-app-icono{
-    font-size: 44px;
-    margin-top: 24px;
+.clima-app-icono {
+  font-size: 44px;
+  margin-top: 24px;
 }
-.clima-app-temperatura{
-    font-size: 88px;
-    margin-left: 12px;
-    font-weight: bold;
+.clima-app-temperatura {
+  font-size: 88px;
+  margin-left: 12px;
+  font-weight: bold;
 }
 
-.clima-app-unidad{
-    margin-top: 30px;
-    font-size: 26px;
+.clima-app-unidad {
+  margin-top: 30px;
+  font-size: 26px;
 }
 
 header {
