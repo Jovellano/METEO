@@ -77,8 +77,8 @@ a {
   color: plum;
 }
 
-.App {
-  background-color: white;
+.APP {
+  background-color: rgb(213, 141, 241);
   max-width: 600px;
   margin: 30 auto;
   box-shadow: 0 30px 50 px rgba(61, 50, 100, 0.08);
