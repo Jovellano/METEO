@@ -104,7 +104,7 @@ function forescast() {
       </div>
     </div>`;
   });
-  forescastElemente.innerHTML = forescasthtml;
+  forescastElement.innerHTML = forescasthtml;
 }
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
