@@ -9,7 +9,7 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#search-form-input");
   //console.log(searchInput.value);
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = searchInput.Value;
+  cityElement.innerHTML = searchInput.value;
   seacrhCity(searchInput.value);
 }
 let searchFormElement = document.querySelector("seacrh-form");
