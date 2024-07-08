@@ -78,3 +78,17 @@ setInterval(() => {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+let forescast = document.querySelector("#forescast");
+forescast.innerHTML = `
+  <div class="clima-forescast-day">
+    <div class="clima-forescast-date">domingo</div>
+    <div class="clima-forescast-icono">☀️</div>
+    <div class="clima-forescast-temperaturas">
+      <div class="clima-forescast-temperatura">
+        <strong>26° </strong>
+      </div>
+      <div class="clima-forestcast-temperatura">
+        <strong>26° </strong>
+      </div>
+    </div>`;
