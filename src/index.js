@@ -1,10 +1,10 @@
-function refereshclima(response) {
+function refreshclima(response) {
   console.log(response.data.temperature.current);
 }
 function seacrhCity(city) {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric"`;
-  axios.get(apiUrl).then(refereshclima);
+  axios.get(apiUrl).then(refreshclima);
   //console.log(apiUrl);
 }
 
