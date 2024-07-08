@@ -153,6 +153,33 @@ main {
   font-size: 26px;
 }
 
+.clima-forescast {
+  display: flex;
+}
+.clima-forescast-date {
+  text-align: center;
+  color: #ff0080;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.clima-forescast-icono {
+  font-size: 42px;
+  text-align: center;
+}
+
+.clima-forescast-temperaturas {
+  text-align: center;
+  margin: 10px;
+  color: #ff0080;
+  display: flex;
+  justify-content: center;
+}
+.clima-forestcast-temperatura {
+  padding: 0 10px;
+}
+
 header {
   border-top: 1px solid #ffc0cb;
   padding: 30px 0 0 0;
