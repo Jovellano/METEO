@@ -77,7 +77,6 @@ setInterval(() => {
 }, 1500);
 
 function displayforescast() {
-  let forescastElement = document.querySelector("#forescast");
   let dias = [
     "domingo",
     "lunes",
@@ -104,6 +103,7 @@ function displayforescast() {
       </div>
     </div>`;
   });
+  let forescastElement = document.querySelector("#forescast");
   forescastElement.innerHTML = forescasthtml;
 }
 let searchFormElement = document.querySelector("#search-form");
