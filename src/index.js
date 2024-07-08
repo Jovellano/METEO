@@ -3,10 +3,14 @@ function refreshclima(response) {
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
   console.log(response.data.condition.description);
+
+  console.log(response.data);
 
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   temperatureElement.innerHTML = Math.round(temperature);
   //console.log(response.data.temperature.current);
 }
