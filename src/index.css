@@ -156,13 +156,13 @@ main {
 .clima-forescast {
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  margin: 30px;
 }
 .clima-forescast-date {
   text-align: center;
   color: #ff0080;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 10px;
   margin-bottom: 3px;
 }
 
