@@ -167,8 +167,10 @@ main {
 }
 
 .clima-forescast-icono {
-  font-size: 26px;
-  text-align: center;
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 
 .clima-forescast-temperaturas {
