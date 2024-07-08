@@ -76,7 +76,7 @@ setInterval(() => {
   setBackgroundColor();
 }, 1500);
 
-function forescast() {
+function displayforescast() {
   let forescast = document.querySelector("#forescast");
   let dias = [
     "domingo",
