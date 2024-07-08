@@ -6,7 +6,7 @@ function refreshclima(response) {
   console.log(response.data.condition.description);
 
   cityElement.innerHTML = response.data.city;
-  descriptionElement = response.data.condition.description;
+  descriptionElement.innerHTML = response.data.condition.description;
   temperatureElement.innerHTML = Math.round(temperature);
   //console.log(response.data.temperature.current);
 }
