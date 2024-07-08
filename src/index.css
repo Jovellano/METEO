@@ -142,10 +142,9 @@ main {
   height: 100px;
 }
 .clima-app-temperatura {
-  font-size: 30px;
-  margin-left: 10px;
+  font-size: 88px;
   font-weight: bold;
-  line-height: 10px;
+  line-height: 88px;
 }
 
 .clima-app-unidad {
