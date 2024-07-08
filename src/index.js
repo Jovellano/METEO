@@ -87,8 +87,11 @@ function forescast() {
     "viernes",
     "sábado",
   ];
+  let forescasthtml = "";
   dias.forEach(function (day) {
-    forescast.innerHTML = `
+    forescasthtml =
+      forescasthtml +
+      `
   <div class="clima-forescast-day">
     <div class="clima-forescast-date">${day}</div>
     <div class="clima-forescast-icono">☀️</div>
@@ -101,6 +104,7 @@ function forescast() {
       </div>
     </div>`;
   });
+  forescastElemente.innerHTML = forescasthtml;
 }
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
