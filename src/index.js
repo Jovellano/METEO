@@ -4,15 +4,39 @@ function refreshclima(response) {
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
+  let velocidadvientoElement = document.querySelector("#velocidadviento");
+  let timeElement = document.querySelector("#time");
+  let date = new date(response.data, time * 1000);
   //console.log(response.data.condition.description);
 
   console.log(response.data);
 
   cityElement.innerHTML = response.data.city;
+  timeElement.innerHTML = formatofecha(date);
   descriptionElement.innerHTML = response.data.condition.description;
-  humidityElement.innerHTML = response.data.temperature.humidity;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}`;
+  velocidadvientoElement.innerHTML = `${response.data.wind.speed}km/h`;
+
   temperatureElement.innerHTML = Math.round(temperature);
   //console.log(response.data.temperature.current);
+}
+function formatofecha(date) {
+  let minutos = date.getMinutes();
+  let horas = date.getHours();
+  let dias = [
+    "domingo",
+    "lunes",
+    "martes",
+    "miércoles",
+    "jueves",
+    "viernes",
+    "sábado",
+  ];
+  let day = dias[day.getday()];
+  if (minutos < 10) {
+    mintos = `0{minutos}`;
+  }
+  return `${dias} ${horas}:${minutos}`;
 }
 function seacrhCity(city) {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
