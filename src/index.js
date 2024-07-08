@@ -61,7 +61,7 @@ function handleSearchSubmit(event) {
 function getForecast() {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
   let apiUrl = `https://api.shecodes.io/weather/v1/forescast?query=${city}&key=${apikey}$units=metric`;
-  axios(apiUrl).then(displayforescast);
+  axios(apiUrl).then(displayforecast);
   console.log(apiUrl);
 }
 function displayForecast(response) {
@@ -72,15 +72,15 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         `
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">${formatDay(day.time)}</div>
+      <div class="clima-forecast-day">
+        <div class="clima-forecast-date">${formatDay(day.time)}</div>
 
-        <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
+        <img src="${day.condition.icon_url}" class="clima-forecast-icono" />
+        <div class="clima-forecast-temperatures">
+          <div class="clima-forecast-temperature">
             <strong>${Math.round(day.temperature.maximum)}º</strong>
           </div>
-          <div class="weather-forecast-temperature">${Math.round(
+          <div class="clima-forecast-temperature">${Math.round(
             day.temperature.minimum
           )}º</div>
         </div>
@@ -88,8 +88,8 @@ function displayForecast(response) {
     `;
     }
   });
-  let forescastElement = document.querySelector("#forescast");
-  forescastElement.innerHTML = forescasthtml;
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forescasthtml;
 }
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
