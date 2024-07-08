@@ -12,6 +12,5 @@ function handleSearchSubmit(event) {
   cityElement.innerHTML = searchInput.value;
   seacrhCity(searchInput.value);
 }
-let searchFormElement = document.querySelector("seacrh-form");
-
+let searchFormElement = document.querySelector("#seacrh-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
