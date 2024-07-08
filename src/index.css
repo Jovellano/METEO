@@ -80,9 +80,10 @@ a {
 .APP {
   background-color: #d3c1dd;
   max-width: 700px;
-  margin: 100x auto;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
   border-radius: 18px;
-  padding: 100px 100px 100px;
 }
 header {
   border-bottom: 1px solid #ffc0cb;

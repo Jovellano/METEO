@@ -107,6 +107,8 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+//cambiar color del fondo de forma aleatoria
+
 const background = document.getElementById("background");
 const getRandomNumber = (maxNum) => {
   return Math.floor(Math.random() * maxNum);
