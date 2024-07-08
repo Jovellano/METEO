@@ -137,8 +137,8 @@ main {
   display: flex;
 }
 .clima-app-icono {
-  font-size: 53px;
-  margin-top: 16px;
+  width: 100px;
+  height: 100px;
 }
 .clima-app-temperatura {
   font-size: 88px;
