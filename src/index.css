@@ -155,6 +155,8 @@ main {
 
 .clima-forescast {
   display: flex;
+  justify-content: space-around;
+  margin: 30px;
 }
 .clima-forescast-date {
   text-align: center;
@@ -165,7 +167,7 @@ main {
 }
 
 .clima-forescast-icono {
-  font-size: 42px;
+  font-size: 26px;
   text-align: center;
 }
 
