@@ -155,7 +155,7 @@ main {
 .clima-forescast {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .clima-forescast-date {
   text-align: center;
