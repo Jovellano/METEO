@@ -143,8 +143,8 @@ main {
 }
 .clima-app-temperatura {
   font-size: 88px;
-  font-weight: bold;
   line-height: 88px;
+  font-weight: bold;
 }
 
 .clima-app-unidad {
@@ -166,8 +166,8 @@ main {
 }
 
 .clima-forescast-icono {
-  width: 30px;
-  height: 30px;
+  width: 88px;
+  height: 88px;
   display: block;
   margin: 0 auto;
 }
