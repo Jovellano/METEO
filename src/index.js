@@ -84,33 +84,29 @@ function getForecast() {
   axios(apiUrl).then(displayforescast);
   console.log(apiUrl);
 }
-function displayforescast(response) {
-  console.log(response.data);
-  /*let dias = [
-    "domingo",
-    "lunes",
-    "martes",
-    "miércoles",
-    "jueves",
-    "viernes",
-    "sábado",
-  ];*/
-  let forescasthtml = "";
-  response.data.daily.forEach(function (day) {
-    forescasthtml =
-      forescasthtml +
-      `
-  <div class="clima-forescast-day">
-    <div class="clima-forescast-date">domingo</div>
-    <div class="clima-forescast-icono">☀️</div>
-    <div class="clima-forescast-temperaturas">
-      <div class="clima-forescast-temperatura">
-        <strong>${Math.round(day.temperature.maximum)}</strong>
+function displayForecast(response) {
+  let forecastHtml = "";
+
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${formatDay(day.time)}</div>
+
+        <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>${Math.round(day.temperature.maximum)}º</strong>
+          </div>
+          <div class="weather-forecast-temperature">${Math.round(
+            day.temperature.minimum
+          )}º</div>
+        </div>
       </div>
-      <div class="clima-forestcast-temperatura">
-        <strong>26° </strong>
-      </div>
-    </div>`;
+    `;
+    }
   });
   let forescastElement = document.querySelector("#forescast");
   forescastElement.innerHTML = forescasthtml;
