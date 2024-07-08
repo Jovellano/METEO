@@ -1,5 +1,5 @@
 function refreshclima(response) {
-  let temperatuElement = document.querySelector("#temperatura");
+  let temperatuElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   temperatuElement.innerHTML = Math.round(temperature);
   //console.log(response.data.temperature.current);
