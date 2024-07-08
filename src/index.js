@@ -1,5 +1,5 @@
 function refereshclima() {
-  console.log(response.data.temperature);
+  console.log(response.data.temperature.current);
 }
 function seacrhCity(city) {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
