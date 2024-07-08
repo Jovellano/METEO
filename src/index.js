@@ -79,9 +79,11 @@ setInterval(() => {
 function getForecast() {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
   let apiUrl = `https://api.shecodes.io/weather/v1/forescast?query=${city}&key=${apikey}$units=metric`;
+  axios(apiUrl).then(displayforescast);
   console.log(apiUrl);
 }
-function displayforescast() {
+function displayforescast(response) {
+  console.log(response.data);
   let dias = [
     "domingo",
     "lunes",
@@ -115,4 +117,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 getForecast("Paris");
-displayforescast();
