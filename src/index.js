@@ -77,7 +77,7 @@ setInterval(() => {
 }, 1500);
 
 function displayforescast() {
-  let forescast = document.querySelector("#forescast");
+  let forescastElement = document.querySelector("#forescast");
   let dias = [
     "domingo",
     "lunes",
