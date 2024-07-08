@@ -2,10 +2,11 @@ function refreshclima(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = response.data.city;
-
+  let descriptionElement = document.querySelector("#descripción");
   console.log(response.data.descripción);
 
+  cityElement.innerHTML = response.data.city;
+  descriptionElement = response.data.condition.descripción;
   temperatureElement.innerHTML = Math.round(temperature);
   //console.log(response.data.temperature.current);
 }
