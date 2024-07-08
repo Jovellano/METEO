@@ -147,8 +147,6 @@ main {
   line-height: 88px;
   font-weight: bold;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .clima-app-unidad {
