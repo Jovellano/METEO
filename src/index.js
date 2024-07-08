@@ -107,4 +107,24 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Paris");
+const background = document.getElementById("background");
+const getRandomNumber = (maxNum) => {
+  return Math.floor(Math.random() * maxNum);
+};
+const getRandomColor = () => {
+  const h = getRandomNumber(360);
+  const s = getRandomNumber(100);
+  const l = getRandomNumber(100);
+  return `hsl(${h}deg, ${s}%, ${l}%)`;
+};
+const setBackgroundColor = () => {
+  const randomColor = getRandomColor();
+  background.style.backgroundColor = randomColor;
+  background.style.color = randomColor;
+};
+setBackgroundColor();
+setInterval(() => {
+  setBackgroundColor();
+}, 1500);
+
+//searchCity("Paris");
