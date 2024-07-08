@@ -7,6 +7,8 @@ function refreshclima(response) {
   let velocidadvientoElement = document.querySelector("#velocidadviento");
   let timeElement = document.querySelector("#time");
   let date = new date(response.data, time * 1000);
+  let iconoElement = document.querySelector("#icono");
+  iconoElement.innerHTML = ` <img src="${response.data.condition.icon_url}"class="clima-app-icono"/>`;
   //console.log(response.data.condition.description);
 
   console.log(response.data);
