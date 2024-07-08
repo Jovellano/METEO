@@ -105,7 +105,7 @@ function displayforescast(response) {
     <div class="clima-forescast-icono">☀️</div>
     <div class="clima-forescast-temperaturas">
       <div class="clima-forescast-temperatura">
-        <strong>${day.temperature.maximum}</strong>
+        <strong>${Math.round(day.temperature.maximum)}</strong>
       </div>
       <div class="clima-forestcast-temperatura">
         <strong>26° </strong>
