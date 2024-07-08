@@ -58,26 +58,6 @@ function handleSearchSubmit(event) {
   seacrhCity(searchInput.value);
 }
 
-const background = document.getElementById("background");
-const getRandomNumber = (maxNum) => {
-  return Math.floor(Math.random() * maxNum);
-};
-const getRandomColor = () => {
-  const h = getRandomNumber(360);
-  const s = getRandomNumber(100);
-  const l = getRandomNumber(100);
-  return `hsl(${h}deg, ${s}%, ${l}%)`;
-};
-const setBackgroundColor = () => {
-  const randomColor = getRandomColor();
-  background.style.backgroundColor = randomColor;
-  background.style.color = randomColor;
-};
-setBackgroundColor();
-setInterval(() => {
-  setBackgroundColor();
-}, 1500);
-
 function getForecast() {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
   let apiUrl = `https://api.shecodes.io/weather/v1/forescast?query=${city}&key=${apikey}$units=metric`;
