@@ -6,7 +6,7 @@ function refreshclima(response) {
   let humidityElement = document.querySelector("#humidity");
   let velocidadvientoElement = document.querySelector("#velocidadviento");
   let timeElement = document.querySelector("#time");
-  let date = new date(response.data, time * 1000);
+  let date = new date(response.data.time * 1000);
   let iconoElement = document.querySelector("#icono");
 
   //console.log(response.data.condition.description);
