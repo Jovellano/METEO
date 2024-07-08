@@ -109,7 +109,7 @@ header {
 }
 
 main {
-  padding: 88px 0;
+  padding: 45px 0;
   transition: background 1s;
 }
 
@@ -153,9 +153,9 @@ main {
 }
 
 .clima-forescast {
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .clima-forescast-date {
   text-align: center;
