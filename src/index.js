@@ -34,7 +34,7 @@ function formatoFecha(date) {
     "viernes",
     "sábado",
   ];
-  let day = dias[date.getday()];
+  let day = dias[date.getDay()];
   if (minutos < 10) {
     minutos = `0${minutos}`;
   }
