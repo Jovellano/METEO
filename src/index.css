@@ -131,11 +131,14 @@ main {
 
 .clima-app-data {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .clima-app-temperatura-container {
   display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clima-app-icono {
   width: 100px;
