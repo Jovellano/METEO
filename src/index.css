@@ -182,6 +182,7 @@ main {
   padding: 0 10px;
   justify-content: space-around;
   margin-top: 26px;
+  display: flex;
 }
 
 header {
