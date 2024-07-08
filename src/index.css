@@ -131,7 +131,7 @@ main {
 
 .clima-app-data {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .clima-app-temperatura-container {
