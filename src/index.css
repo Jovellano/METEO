@@ -137,7 +137,7 @@ main {
 .clima-app-temperatura-container {
   display: flex;
 }
-.clima-app-icono {
+.clima-app-icon {
   width: 88px;
   height: 88px;
 }
@@ -165,14 +165,14 @@ main {
   margin-bottom: 10px;
 }
 
-.clima-forecast-icono {
+.clima-forecast-icon {
   width: 88px;
   height: 88px;
   display: block;
   margin: 0 auto;
 }
 
-.clima-forecast-temperaturas {
+.clima-forecast-temperatures {
   text-align: center;
   margin-top: 10px;
   color: #ff0080;
