@@ -89,7 +89,7 @@ function displayForecast(response) {
     }
   });
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = forescasthtml;
+  forecastElement.innerHTML = forecastHtml;
 }
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
