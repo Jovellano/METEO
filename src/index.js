@@ -1,4 +1,4 @@
-function refereshclima() {
+function refereshclima(response) {
   console.log(response.data.temperature.current);
 }
 function seacrhCity(city) {
