@@ -8,7 +8,7 @@ function refreshclima(response) {
   let timeElement = document.querySelector("#time");
   let date = new date(response.data, time * 1000);
   let iconoElement = document.querySelector("#icono");
-  iconoElement.innerHTML = ` <img src="${response.data.condition.icon_url}"class="clima-app-icono"/>`;
+
   //console.log(response.data.condition.description);
 
   console.log(response.data);
@@ -18,8 +18,8 @@ function refreshclima(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}`;
   velocidadvientoElement.innerHTML = `${response.data.wind.speed}km/h`;
-
   temperatureElement.innerHTML = Math.round(temperature);
+  iconoElement.innerHTML = ` <img src="${response.data.condition.icon_url}"class="clima-app-icono"/>`;
   //console.log(response.data.temperature.current);
 }
 function formatofecha(date) {
