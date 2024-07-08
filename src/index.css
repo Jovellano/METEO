@@ -154,7 +154,7 @@ main {
 
 .clima-forescast {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 40px;
 }
 .clima-forescast-date {
