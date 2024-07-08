@@ -14,7 +14,7 @@ function refreshclima(response) {
   console.log(response.data);
 
   cityElement.innerHTML = response.data.city;
-  timeElement.innerHTML = formatoFecha(date);
+  timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}`;
   velocidadvientoElement.innerHTML = `${response.data.wind.speed}km/h`;
@@ -22,7 +22,7 @@ function refreshclima(response) {
   iconoElement.innerHTML = ` <img src="${response.data.condition.icon_url}"class="clima-app-icono"/>`;
   //console.log(response.data.temperature.current);
 }
-function formatoFecha(date) {
+function formatDate(date) {
   let minutos = date.getMinutes();
   let horas = date.getHours();
   let dias = [
