@@ -21,6 +21,8 @@ function refreshclima(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   iconoElement.innerHTML = ` <img src="${response.data.condition.icon_url}"class="clima-app-icono"/>`;
   //console.log(response.data.temperature.current);
+
+  getForecast(response.data.city);
 }
 function formatoFecha(date) {
   let minutos = date.getMinutes();
@@ -84,7 +86,7 @@ function getForecast() {
 }
 function displayforescast(response) {
   console.log(response.data);
-  let dias = [
+  /*let dias = [
     "domingo",
     "lunes",
     "martes",
@@ -92,18 +94,18 @@ function displayforescast(response) {
     "jueves",
     "viernes",
     "sábado",
-  ];
+  ];*/
   let forescasthtml = "";
-  dias.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forescasthtml =
       forescasthtml +
       `
   <div class="clima-forescast-day">
-    <div class="clima-forescast-date">${day}</div>
+    <div class="clima-forescast-date">domingo</div>
     <div class="clima-forescast-icono">☀️</div>
     <div class="clima-forescast-temperaturas">
       <div class="clima-forescast-temperatura">
-        <strong>26° </strong>
+        <strong>${day.temperature.minimum}</strong>
       </div>
       <div class="clima-forestcast-temperatura">
         <strong>26° </strong>
