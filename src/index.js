@@ -61,7 +61,7 @@ function handleSearchSubmit(event) {
 function getForecast() {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
   let apiUrl = `https://api.shecodes.io/weather/v1/forescast?query=${city}&key=${apikey}$units=metric`;
-  axios(apiUrl).then(displayforecast);
+  axios(apiUrl).then(displayForecast);
   console.log(apiUrl);
 }
 function displayForecast(response) {
@@ -74,7 +74,6 @@ function displayForecast(response) {
         `
       <div class="clima-forecast-day">
         <div class="clima-forecast-date">${formatDay(day.time)}</div>
-
         <img src="${day.condition.icon_url}" class="clima-forecast-icono" />
         <div class="clima-forecast-temperaturas">
           <div class="clima-forecast-temperature">
