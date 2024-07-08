@@ -76,13 +76,21 @@ setInterval(() => {
   setBackgroundColor();
 }, 1500);
 
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", handleSearchSubmit);
-
-let forescast = document.querySelector("#forescast");
-forescast.innerHTML = `
+function forescast() {
+  let forescast = document.querySelector("#forescast");
+  let dias = [
+    "domingo",
+    "lunes",
+    "martes",
+    "miércoles",
+    "jueves",
+    "viernes",
+    "sábado",
+  ];
+  dias.forEach(function (day) {
+    forescast.innerHTML = `
   <div class="clima-forescast-day">
-    <div class="clima-forescast-date">domingo</div>
+    <div class="clima-forescast-date">${day}</div>
     <div class="clima-forescast-icono">☀️</div>
     <div class="clima-forescast-temperaturas">
       <div class="clima-forescast-temperatura">
@@ -92,3 +100,8 @@ forescast.innerHTML = `
         <strong>26° </strong>
       </div>
     </div>`;
+  });
+}
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+displayforescast();
