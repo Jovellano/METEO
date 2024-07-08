@@ -175,13 +175,13 @@ main {
 
 .clima-forescast-temperaturas {
   text-align: center;
-  margin-top: 3px;
+  margin-top: 10px;
   color: #ff0080;
   display: flex;
   justify-content: center;
 }
 .clima-forestcast-temperatura {
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 header {
