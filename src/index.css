@@ -151,6 +151,7 @@ main {
 .clima-app-unidad {
   margin-top: 30px;
   font-size: 30px;
+  line-height: 10px;
 }
 
 .clima-forescast {
