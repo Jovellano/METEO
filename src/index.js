@@ -1,5 +1,8 @@
 function refreshclima(response) {
-  console.log(response.data.temperature.current);
+  let temperatuElement = document.querySelector("#temperatura");
+  let temperature = response.data.temperature.current;
+  temperatuElement.innerHTML = Math.round(temperature);
+  //console.log(response.data.temperature.current);
 }
 function seacrhCity(city) {
   let apikey = "3dfbt24a697c355eb92bof5b6004aa5c";
