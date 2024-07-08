@@ -1,5 +1,4 @@
 body {
-  background-color: #ffc0cb;
   .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -110,6 +109,7 @@ header {
 
 main {
   padding: 45px 0;
+  transition: background 1s;
 }
 
 .clima-app-ciudad {
