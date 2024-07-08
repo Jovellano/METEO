@@ -179,6 +179,7 @@ main {
   color: #ff0080;
   display: flex;
   justify-content: center;
+  display: flex;
 }
 .clima-forestcast-temperatura {
   padding: 0 10px;
